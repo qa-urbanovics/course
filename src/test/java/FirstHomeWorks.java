@@ -3,13 +3,6 @@ import org.junit.jupiter.api.Test;
 public class FirstHomeWorks {
     @Test
 
-    /*
-    * 1. Создать метод, который будет высчитывать конечную сумму, которую будет необходимо заплатить
-    * человеку взявшему кредит на жильё
-(в консоль распечатать стартовую сумму, сумму процентов и конечную сумму которую надо отдать)
-    *
-    * */
-
     public void creditApartment() {
 
         Double apartmentCena = 37500.00;
@@ -39,5 +32,22 @@ public class FirstHomeWorks {
 
     }
 
+    @Test
+    public void twoPoints() {
 
+        double x1 = 3;
+        double y1 = 4;
+        double x2 = 7;
+        double y2 = 1;
+
+        double a = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
+/*
+метод pow принимает два значения:
+1) Значение x2-x1
+2) Степень  2
+
+ */
+
+        System.out.println(a);
+    }
 }
