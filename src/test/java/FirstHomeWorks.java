@@ -35,18 +35,12 @@ public class FirstHomeWorks {
     @Test
     public void twoPoints() {
 
-        double x1 = 3;
-        double y1 = 4;
-        double x2 = 7;
-        double y2 = 1;
+        double x1 = 6.33;
+        double y1 = 2.14;
+        double x2 = 17.76;
+        double y2 = 8.74;
 
         double a = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
-/*
-метод pow принимает два значения:
-1) Значение x2-x1
-2) Степень  2
-
- */
 
         System.out.println(a);
     }

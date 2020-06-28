@@ -6,6 +6,7 @@ public class DelfiTests {
     @Test
 
     public void firstDelfiTest() {
+        System.setProperty("webdriver.chrome.driver", "c://chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://rus.delfi.lv");
     }
