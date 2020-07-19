@@ -14,5 +14,6 @@ public class DelfiTests {
 
        String text = driver.findElement(By.xpath(".//h1[contains(@class,'headline__title')]")).getText();
        System.out.println(text);
+
     }
 }
