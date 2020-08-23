@@ -17,6 +17,7 @@ public class DelfiTitleAndCommentCheck {
     private final By TITLE = By.xpath(".//h1[contains(@class, 'headline__title')]");
     private final By COMMENTS_COUNT = By.xpath(".//a[contains(@class, 'comment-count')]");
     private final By ARTICLE_PAGE_TITLE = By.xpath(".//h1[contains(@class, 'd-inline')]");
+    private final By ARTICLE_PAGE_COMENT_PAGE_TITLE = By.xpath(".//h1[contains(@class, 'article-title')]");
     private final By ARTICLE_PAGE_COMMENTS = By.xpath(".//p[contains(@class, 'text-counter')]");
     private final By COMMENTS_PAGE_COUNT = By.xpath(".//span[contains(@class, 'article-comments')]");
 
@@ -75,10 +76,10 @@ public class DelfiTitleAndCommentCheck {
         driver.findElement(ARTICLE_PAGE_COMMENTS).click();
 
         LOGGER.info("Waiting article page title");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(ARTICLE_PAGE_TITLE));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(ARTICLE_PAGE_COMENT_PAGE_TITLE));
 
         LOGGER.info("Find artile title");
-        String commentsPageTitle = driver.findElement(ARTICLE_PAGE_TITLE).getText();
+        String commentsPageTitle = driver.findElement(ARTICLE_PAGE_COMENT_PAGE_TITLE).getText();
 
         LOGGER.info("Find comment counts");
         int commentsPageCommentsCount = Integer.parseInt(driver.findElement(COMMENTS_PAGE_COUNT).getText());
