@@ -19,8 +19,8 @@ Feature: Testing weather API for one city
     Then temp is: 280.32
     And pressure is: 1012
     And humidity is: 81
-    And minimal temp: 279.15
-    And maximal temp: 281.15
+    And minimalTemp is: 279.15
+    And maximalTemp is: 281.15
 
     Then visibility is: 10000
 

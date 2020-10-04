@@ -44,7 +44,7 @@ public class WeatherStepDefs {
 
     @Then("id is: {int}")
     public void check_id(int id){
-
+       // Assertions.assertEquals(id, response.getCoord().getId(), "Wrong id value");
     }
 
     @Then("main is: {string}")
@@ -81,13 +81,13 @@ public class WeatherStepDefs {
 
     }
 
-    @Then("minimal temp is: {double}")
-    public void check_temp_min(Double minimal temp){
+    @Then("minimalTemp is: {double}")
+    public void check_temp_min(Double minimalTemp) {
 
     }
 
-    @Then("temp_max is: {double}")
-    public void check_temp_max(Double temp_max){
+    @Then("maximalTemp is: {double}")
+    public void check_temp_max(Double maximalTemp){
     }
 
     @Then("visibility is: {int}")

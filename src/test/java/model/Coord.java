@@ -19,4 +19,7 @@ public class Coord {
     public double getLat() {
         return lat;
     }
+
+
+
 }
