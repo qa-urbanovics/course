@@ -6,13 +6,38 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 
-@JsonIgnoreProperties(ignoreUnknown = true)
+//@JsonIgnoreProperties(ignoreUnknown = true)
 public class Response {
     private Coord coord;
+    private Main main;
+    private Wind wind;
+    private Clouds clouds;
+    private Sys sys;
 
     @JsonProperty("weather")
     private List<Weather> weathers;
     private String base;
+    private int dt;
+    private int visibility;
+    private int cod;
+    private int id;
+    private String name;
+
+    public int getVisibility() {
+        return visibility;
+    }
+
+    public void setVisibility(int visibility) {
+        this.visibility = visibility;
+    }
+
+    public Wind getWind() {
+        return wind;
+    }
+
+    public void setWind(Wind wind) {
+        this.wind = wind;
+    }
 
     public Coord getCoord() {
         return coord;
@@ -20,6 +45,15 @@ public class Response {
 
     public void setCoord(Coord coord) {
         this.coord = coord;
+    }
+
+
+    public Main getMain() {
+        return main;
+    }
+
+    public void setMain(Main main) {
+        this.main = main;
     }
 
     public List<Weather> getWeathers() {
@@ -37,4 +71,48 @@ public class Response {
     public void setBase(String base) {
         this.base = base;
     }
+
+    public Clouds getClouds() {
+        return clouds;
+    }
+
+    public void setClonds(Clouds clouds) {
+        this.clouds = clouds;
+    }
+
+    public int getDt() {
+        return dt;
+    }
+
+    public void setDt(int dt) {
+        this.dt = dt;
+    }
+
+    public Sys getSys() {
+        return sys;
+    }
+
+    public void setSys(Sys sys) {
+        this.sys = sys;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCod() { return cod;  }
+
+    public void setCod(int cod) { this.cod = cod;  }
 }

@@ -9,7 +9,7 @@ Feature: Testing weather API for one city
     Then lon is: -0.13
     And lat is: 51.51
 
-    Then id is: 300
+    Then weather_id is: 300
     And main is: "Drizzle"
     And description is: "light intensity drizzle"
     And icon is: "09d"
@@ -19,8 +19,8 @@ Feature: Testing weather API for one city
     Then temp is: 280.32
     And pressure is: 1012
     And humidity is: 81
-    And minimalTemp is: 279.15
-    And maximalTemp is: 281.15
+    And temp_min is: 279.15
+    And temp_max is: 281.15
 
     Then visibility is: 10000
 
@@ -32,7 +32,7 @@ Feature: Testing weather API for one city
     Then dt is: 1485789600
 
     Then type is: 1
-    And id is: 5091
+    And sys_id is: 1
     And message is: 0.0103
     And country is: "GB"
     And sunrise is: 1485762037
